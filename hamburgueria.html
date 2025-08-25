@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cardapio - Hamburgueria</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background: #f8f8f8;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                background: #d32f2f;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            .container {
+                display: grid;
+                grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 30px;
+            }
+            .card{
+                background: white;
+                border-radius: 12px;
+                padding: 20px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+            .card h2 {
+                margin: 10px 0;
+                color: #333;
+            } .card p {
+            color: #666;
+            font-size: 14px;
+        }
+        .preco {
+            font-weight: bold;
+            font-size: 18px;
+            color: #d32f2f;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍔 Hamburgueria Delícia 🍟</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Cheeseburger</h2>
+            <p>Pão, hambúrguer artesanal, queijo cheddar e molho especial.</p>
+            <p class="preco">R$ 22,90</p>
+        </div>
+        <div class="card">
+            <h2>Bacon Burger</h2>
+            <p>Pão, hambúrguer artesanal, queijo prato, bacon crocante e maionese da casa.</p>
+            <p class="preco">R$ 27,50</p>
+        </div>
+        <div class="card">
+            <h2>Veggie Burger</h2>
+            <p>Hambúrguer de grão-de-bico, salada fresca e molho vegano.</p>
+            <p class="preco">R$ 24,00</p>
+        </div>
+        <div class="card">
+            <h2>Batata Frita</h2>
+            <p>Porção média de batata frita crocante.</p>
+            <p class="preco">R$ 12,00</p>
+        </div>
+        <div class="card">
+            <h2>Refrigerante Lata</h2>
+            <p>Coca-Cola, Guaraná ou Sprite.</p>
+            <p class="preco">R$ 6,00</p>
+        </div>
+    </div>
+</body>
+</html>
